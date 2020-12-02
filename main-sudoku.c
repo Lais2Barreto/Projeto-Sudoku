@@ -18,7 +18,7 @@ o jogo for resolvido, maior será a pontuação final.
 
 
 void atraso_rapido(){
-    for(int x=0; x<200000000; x++);
+    for(int x=0; x<100000000; x++);
 }
 
 //Apresentação do jogo
@@ -137,14 +137,14 @@ int atualizar_tempo(time_t tempo_inicio, int opcao){
     }
 }
 
-//o nome ja explica :D
+
 int obter_min(time_t tempo_inicio){
     int min = atualizar_tempo(tempo_inicio, 1);
     return min;
 
 }
 
-//o nome ja explica :D
+
 int obter_sec(time_t tempo_inicio){
     int sec = atualizar_tempo(tempo_inicio, 2);
     return sec;
@@ -228,7 +228,7 @@ int validar_coordenadas(int coluna, int linha){
 
         return 1;
     }
-    //printf("O problema nas coods!");
+    
     return 0;
 }
 
@@ -446,4 +446,4 @@ void main(){
 
 }
 
-//8 45 96 1 91   74     3    7  4 8  6  3   9  4  9 3  2    9     76   58 9 28 71 3
+
